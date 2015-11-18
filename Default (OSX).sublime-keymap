@@ -1,0 +1,7 @@
+[
+    {
+        "keys":["ctrl+command+1"],
+        "command":"circle",
+        "args": {}
+    }
+]
