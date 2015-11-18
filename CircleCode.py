@@ -11,7 +11,11 @@ class CircleCommand(sublime_plugin.TextCommand):
         for sel  in selection:
             if not sel.empty():
                 seltext = self.view.substr(sel)
-                self.circle(seltext)
+                seltext = self.circle(seltext)
+                # 轉換成 php code
+                self.view.replace(seltext, sublime.Region(sel))
 
     def circle(self, text):
         print(text)
+        #re.match(pattern, string)
+        return 123

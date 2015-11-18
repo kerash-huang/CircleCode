@@ -14,14 +14,14 @@ $tmp = [1,2];
 ```
 object
 ```
-{
-    public $a =>
-    string(70) "aaa"
-    public $b =>
-    string(24) 10
+object(stdClass)#1 (2) {
+  ["a"]=>
+  int(11)
+  ["b"]=>
+  int(22)
 }
 $tmp = (object) [
-    'client' => 'aaa',
-    'b' => 10,
+    'a' => 11,
+    'b' => 22,
 ];
 ```
